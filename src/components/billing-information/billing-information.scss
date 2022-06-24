@@ -1,0 +1,167 @@
+.billing-information {
+	max-width: 690px;
+	margin-top: 85px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 190px;
+
+	&__title {
+		margin-left: 30px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	&__payment-method {
+		margin-top: 40px;
+		margin-left: 30px;
+	}
+
+	&__card {
+		margin-top: 40px;
+	}
+
+	&__checkboxes {
+		margin-top: 40px;
+	}
+
+	&__footer {
+		margin-top: 40px;
+	}
+}
+
+.payment-method {
+	&__items {
+		display: flex;
+		align-items: center;
+		gap: 82px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__label {
+		display: flex;
+		align-items: center;
+
+		&::before {
+			content: '';
+			cursor: pointer;
+			margin-right: 9px;
+			left: 0;
+			top: -1px;
+			width: 18px;
+			height: 18px;
+			background-image: inline('radio-off.svg');
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__input:checked + &__label::before {
+		background-image: inline('radio-on.svg');
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 550px;
+	padding: 20px 30px;
+	padding-bottom: 46px;
+	background: #ffffff;
+	border: 1px solid #cfcfcf;
+	box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+
+	&__wrapper {
+		display: inline-block;
+	}
+
+	&__label {
+		position: relative;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 24px;
+		color: #555770;
+	}
+
+	&__input {
+		&--short {
+			width: 100px;
+		}
+		&--full-width {
+			width: 100%;
+		}
+	}
+
+	&__short-wrapper {
+		display: flex;
+		gap: 30px;
+		width: min-content;
+	}
+
+	&__label--cvv {
+		position: relative;
+	}
+
+	&__label--cvv::after {
+		content: '?';
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		right: -22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 13px;
+		height: 13px;
+		font-weight: 400;
+		font-size: 10px;
+		background-color: #dbdbdb;
+		border-radius: 50%;
+	}
+}
+
+.checkboxes {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 12px;
+	padding-left: 30px;
+
+	&__wrapper {
+		display: inline-flex;
+	}
+
+	&__label {
+		display: flex;
+		align-items: center;
+		color: #8c8c8c;
+
+		&::before {
+			content: '';
+			cursor: pointer;
+			width: 18px;
+			height: 18px;
+			margin-right: 8px;
+			background-image: inline('checkbox-off.svg');
+		}
+	}
+
+	&__input:checked + &__label::before {
+		background-image: inline('checkbox-on.svg');
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #000000;
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+}

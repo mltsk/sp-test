@@ -1,0 +1,17 @@
+{% extends "../ext/base.nunj" %}
+{% from "../../components/icon/icon.nunj" import icon %}
+
+{% block content %}
+	{% include '../../components/header/header.nunj' %}
+	<main class="main-page">
+		<div class="container">
+			{% include '../../components/process/process.nunj' %}
+			{% include '../../components/billing-information/billing-information.nunj' %}
+		</div>
+		<aside class="aside">
+			{% include '../../components/basket/basket.nunj' %}
+			{% include '../../components/promo-code/promo-code.nunj' %}
+			{% include '../../components/price/price.nunj' %}
+		</aside>
+	</main>
+{% endblock content %}

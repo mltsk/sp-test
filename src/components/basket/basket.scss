@@ -1,0 +1,54 @@
+.basket {
+	padding: 40px;
+	border-bottom: 1px solid #cfcfcf;
+
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin-top: 30px;
+	}
+
+	&__card {
+		display: flex;
+		gap: 12px;
+	}
+
+	&__info {
+		flex-grow: 1;
+	}
+
+	&__price-management {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+		margin-top: 25px;
+	}
+
+	&__price-buttons {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+	}
+
+	&__price-button {
+		width: 20px;
+		height: 20px;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		&--minus {
+			background-image: inline('minus.svg');
+		}
+
+		&--plus {
+			background-image: inline('plus.svg');
+		}
+	}
+
+	&__cross-button {
+		width: 18px;
+		height: 18px;
+		background-image: inline('cross.svg');
+	}
+}

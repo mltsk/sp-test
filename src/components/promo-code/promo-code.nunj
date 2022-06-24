@@ -1,0 +1,7 @@
+<section class="promo-code">
+	<h2 class="promo-code__title">Promo code</h2>
+	<div class="promo-code__wrapper">
+		<input class="promo-code__input input-text" type="text" />
+		<button class="promo-code__button general-button general-button--blue">Apply</button>
+	</div>
+</section>

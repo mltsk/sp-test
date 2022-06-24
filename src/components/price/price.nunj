@@ -1,0 +1,20 @@
+<section class="price">
+	<table class="price__table">
+		<tr class="price__row">
+			<th class="price__header">Subtotal</th>
+			<td class="price__data">$1 050</td>
+		</tr>
+		<tr class="price__row">
+			<th class="price__header">Tax</th>
+			<td class="price__data">$100</td>
+		</tr>
+		<tr class="price__row">
+			<th class="price__header">Shipping</th>
+			<td class="price__data">$150</td>
+		</tr>
+		<tr class="price__row price__row--total">
+			<th class="price__header price__header--total">Total</th>
+			<td class="price__data price__data--total">$1 300</td>
+		</tr>
+	</table>
+</section>

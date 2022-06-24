@@ -1,0 +1,20 @@
+.main-page {
+	display: flex;
+}
+
+.container {
+	padding: 0 50px;
+	flex-grow: 1;
+}
+
+.aside {
+	display: none;
+	width: 410px;
+	border-left: 1px solid #cfcfcf;
+}
+
+@media screen and (min-width: 1200px) {
+	.aside {
+		display: block;
+	}
+}

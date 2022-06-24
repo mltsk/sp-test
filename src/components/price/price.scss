@@ -1,0 +1,25 @@
+.price {
+	padding: 40px;
+
+	&__table {
+		width: 100%;
+		line-height: 34px;
+	}
+
+	&__header {
+		font-weight: 400;
+		text-align: start;
+	}
+
+	&__data {
+		text-align: end;
+	}
+
+	&__header--total {
+		font-weight: 700;
+	}
+
+	&__data--total {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"processItems": [
+		{
+			"name": "Account",
+			"state": "completed"
+		},
+		{
+			"name": "Shipping",
+			"state": "completed"
+		},
+		{
+			"name": "Billing",
+			"state": "current"
+		},
+		{
+			"name": "Review",
+			"state": "disabled"
+		}
+	],
+	"navigationItems": [
+		"Women's",
+		"Men's",
+		"Home",
+		"Travel",
+		"Beauty",
+		"Sale"
+	]
+}

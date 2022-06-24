@@ -1,0 +1,54 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	height: 81px;
+	border-bottom: 1px solid #cfcfcf;
+
+	&__button {
+		position: relative;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+
+		&--contain {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-end;
+
+			width: 30px;
+			height: 27px;
+		}
+
+		&--contain::after {
+			content: '2';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 13px;
+			height: 13px;
+			color: #ffffff;
+			background: #3366ff;
+			border-radius: 50%;
+			font-weight: 400;
+			font-size: 10px;
+			line-height: 12px;
+		}
+
+		&:active {
+			transform: translateY(1px);
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 26px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.header__button--burger {
+		display: none;
+	}
+}

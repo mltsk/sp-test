@@ -1,0 +1,64 @@
+<section class="billing-information">
+	<div class="billing-information__wrapper">
+		<h2 class="billing-information__title">Billing Information</h2>
+		<from>
+			<fieldset class="billing-information__payment-method payment-method">
+				<ul class="payment-method__items">
+					<li class="payment-method__item">
+						<input class="visually-hidden payment-method__input" type="radio" name="payment-method" id="credit-card" value="credit-card" checked/>
+						<label class="payment-method__label" for="credit-card">Pay with Credit Card</label>
+					</li>
+					<li class="payment-method__item">
+						<input class="visually-hidden payment-method__input" type="radio" name="payment-method" id="paypal" value="paypal"/>
+						<label class="payment-method__label" for="paypal">
+							{{ icon({
+								iconName: 'paypal',
+								className: 'icon',
+								attributes: 'viewBox="0 0 85 23" style="width: 85px; height: 23px;"'
+							}) }}
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<div class="billing-information__card card">
+				<div class="card__wrapper">
+					<label class="card__label" for="card-name">Name on card</label>
+					<input class="card__input card__input--full-width input-text" id="card-name" type="text" placeholder="Placeholder Text" />
+				</div>
+				<div class="card__wrapper">
+					<label class="card__label" for="card-number-1">Card number</label>
+					<div class="card__short-wrapper">
+						<input class="card__input card__input--short input-text" id="card-number-1" type="text" />
+						<input class="card__input card__input--short input-text" id="card-number-2" type="text" />
+						<input class="card__input card__input--short input-text" id="card-number-3" type="text" />
+						<input class="card__input card__input--short input-text" id="card-number-4" type="text" />
+					</div>
+				</div>
+				<div class="card__short-wrapper">
+					<div class="card__wrapper">
+						<label class="card__label" for="card-expire">Expire date</label>
+						<input class="card__input card__input--short input-text" id="card-expire" type="text" />
+					</div>
+					<div class="card__wrapper card__wrapper--cvv">
+						<label class="card__label card__label--cvv" for="card-cvv">CVV code</label>
+						<input class="card__input card__input--short input-text" id="card-cvv" type="text" />
+					</div>
+				</div>
+			</div>
+			<fieldset class="billing-information__checkboxes checkboxes">
+				<div class="checkboxes__wrapper">
+					<input class="visually-hidden checkboxes__input" type="checkbox" name="save-credit-card" id="save-credit-card" checked>
+					<label class="checkboxes__label" for="save-credit-card">Save information of this credit card</label>
+				</div>
+				<div class="checkboxes__wrapper">
+					<input class="visually-hidden checkboxes__input" type="checkbox" name="accept-rules" id="accept-rules">
+					<label class="checkboxes__label" for="accept-rules">I accept the&nbsp;<a class="checkboxes__link">terms and comditions</a>&nbsp;and the Privacy Policies</label>
+				</div>
+			</fieldset>
+			<fieldset class="billing-information__footer footer">
+				<button class="footer__button button general-button general-button--white">Back</button>
+				<button class="footer__button button general-button general-button--blue">Check Out</button>
+			</fieldset>
+		</form>
+	</div>
+</section>

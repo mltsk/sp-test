@@ -1,0 +1,9 @@
+<div class="process">
+	{% for item in processItems %}
+		<div class="process__item process__item--{{item.state}}">
+			<button class="button process__button">{{loop.index}}</button>
+			<span class="process__label">{{item.name}}</span>
+			<span class="process__line"></span>
+		</div>
+	{% endfor %}
+</div>

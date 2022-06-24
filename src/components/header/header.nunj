@@ -1,0 +1,31 @@
+<div class="header">
+	{{ icon({
+		iconName: 'logo',
+		className: 'icon',
+		attributes: 'viewBox="0 0 89 32" style="width: 89px; height: 32px;"'
+	}) }}
+	{% include '../../components/navigation/navigation.nunj' %}
+	<div class="header__wrapper">
+		<button class="header__button">
+			{{ icon({
+				iconName: 'search',
+				className: 'icon',
+				attributes: 'viewBox="0 0 24 24" style="width: 24px; height: 24px;"'
+			}) }}
+		</button>
+		<button class="header__button header__button--contain">
+			{{ icon({
+				iconName: 'cart',
+				className: 'icon',
+				attributes: 'viewBox="0 0 24 21" style="width: 24px; height: 21px;"'
+			}) }}
+		</button>
+		<button class="header__button header__button--burger">
+			{{ icon({
+				iconName: 'burger',
+				className: 'icon',
+				attributes: 'viewBox="0 0 29 22" style="width: 29px; height: 22px;"'
+			}) }}
+		</button>
+	</div>
+</div>
